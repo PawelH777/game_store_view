@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @RestController
@@ -31,19 +32,19 @@ public class GameController {
                 .body(buildGameDtoSet(gameService.findAll()));
     }
 
-    @GetMapping
-    ResponseEntity<Set<GameDTO>> findByName(@RequestParam final String name) {
+    @GetMapping("/name/{name}")
+    ResponseEntity<Set<GameDTO>> findByName(@PathVariable final String name) {
         return ResponseEntity.status(200)
                 .body(buildGameDtoSet(gameService.findByName(name)));
     }
 
-    @GetMapping
-    ResponseEntity<Set<GameDTO>> findByGenre(@RequestParam final String genre) {
+    @GetMapping("/genre/{genre}")
+    ResponseEntity<Set<GameDTO>> findByGenre(@PathVariable final String genre) {
         return ResponseEntity.status(200)
                 .body(buildGameDtoSet(gameService.findByGenre(genre)));
     }
 
-    @GetMapping
+    @GetMapping("/search")
     ResponseEntity<Set<GameDTO>> findBySearchText(@RequestParam final String searchText) {
         return ResponseEntity.status(200)
                 .body(buildGameDtoSet(gameService.findBySearchText(searchText)));
