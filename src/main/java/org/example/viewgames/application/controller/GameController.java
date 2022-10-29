@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 @RestController
@@ -55,6 +54,7 @@ public class GameController {
                 .id(game.getId())
                 .name(game.getName())
                 .genre(game.getGenre())
+                .price(game.getPrice())
                 .build();
     }
 

@@ -52,6 +52,7 @@ public class GameRepositoryAdapterImpl implements GameRepositoryAdapter {
                 .id(game.getId())
                 .name(game.getName())
                 .genre(game.getGenre())
+                .price(game.getPrice())
                 .build();
     }
 

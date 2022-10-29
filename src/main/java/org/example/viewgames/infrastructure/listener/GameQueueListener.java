@@ -29,6 +29,7 @@ public class GameQueueListener {
                 .id(message.id())
                 .name(message.name())
                 .genre(message.genre())
+                .price(message.price())
                 .gameStatus(message.status())
                 .build();
     }
