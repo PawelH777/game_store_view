@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1772f6b7-1472-4a47-8352-5497be257377" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/model/EventType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/viewgames/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/viewgames/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/listener/GameQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/listener/GameQueueListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/model/GameMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/model/GameMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/repository/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/viewgames/infrastructure/repository/GameRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/CDPR/CartManagement",
+    "last_opened_file_path": "C:/CDPR/EurekaServer",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -66,8 +67,8 @@
       <recent name="C:\CDPR\ViewGames\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.viewgames.infrastructure.repository" />
       <recent name="org.example.viewgames.infrastructure.model" />
+      <recent name="org.example.viewgames.infrastructure.repository" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,7 +94,7 @@
       <workItem from="1666811675347" duration="742000" />
       <workItem from="1666886416544" duration="11117000" />
       <workItem from="1666976352465" duration="3143000" />
-      <workItem from="1667038118234" duration="6636000" />
+      <workItem from="1667038118234" duration="9392000" />
     </task>
     <servers />
   </component>

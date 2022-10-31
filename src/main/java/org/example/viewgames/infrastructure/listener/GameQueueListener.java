@@ -1,5 +1,6 @@
 package org.example.viewgames.infrastructure.listener;
 
+import org.example.viewgames.infrastructure.model.EventType;
 import org.example.viewgames.infrastructure.model.Game;
 import org.example.viewgames.infrastructure.model.GameMessage;
 import org.example.viewgames.infrastructure.repository.GameRepository;
@@ -20,7 +21,11 @@ public class GameQueueListener {
 
     public void processGameMessage(final GameMessage game) {
         logger.info("Start of game processing with Id " + game.id());
-        gameRepository.save(buildGame(game));
+        if (game.eventType().equals(EventType.GAME_PUBLISHED) || game.eventType().equals(EventType.GAME_UNPUBLISHED)) {
+            gameRepository.save(buildGame(game));
+        } else if (game.eventType().equals(EventType.GAME_DELETED)) {
+            gameRepository.deleteById(game.id());
+        }
         logger.info("Game has been processed");
     }
 

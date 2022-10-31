@@ -14,6 +14,5 @@ public interface GameRepository extends CrudRepository<Game, Long> {
 
     List<Game> findByGenreContainingAndGameStatusAllIgnoreCase(String name, GameStatus gameStatus);
 
-    //    @Query("SELECT g FROM Game g WHERE (g.name LIKE '%?1%' OR g.genre LIKE '%?1%') AND ")
     List<Game> findByNameContainingAndGenreContainingAndGameStatusAllIgnoreCase(String name, String genre, GameStatus gameStatus);
 }
