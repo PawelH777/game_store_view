@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/games")
+@RequestMapping("/api")
 public class GameController {
 
     private final GameService gameService;
@@ -19,7 +19,7 @@ public class GameController {
         this.gameService = gameService;
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     ResponseEntity<GameDTO> findById(@PathVariable final long id) {
         return ResponseEntity.status(200)
                 .body(buildGameDTO(gameService.findById(id)));
